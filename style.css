@@ -151,6 +151,20 @@ body {
 .metrics {
   background-color: #00acff;
   color: white;
+  margin-top: 500px;
+}
+
+@media (min-width: 992px) {
+
+  .metrics {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .metrics {
+    margin-top: 0px;
+  }
 }
 
 .metrics-title {
@@ -187,6 +201,82 @@ body {
   font-family: "Gelasio",
     serif;
   font-size: 1.5rem;
+}
+
+.picbox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.picbox div {
+  padding: 20px;
+  position: absolute;
+}
+
+@media (min-width: 992px) {
+  .picbox div {
+    padding: 20px;
+    position: relative;
+
+  }
+
+  .card-out {
+    display: none;
+  }
+}
+
+.box-three p {
+  background-color: blue;
+  z-index: 2;
+}
+
+.box-two p {
+  background-color: black;
+}
+
+.box-one p {
+  background-color: green;
+}
+
+.card-out {
+
+  height: 400px;
+  width: 240px;
+  /* right: 2px; */
+  top: 20px;
+  cursor: pointer;
+  z-index: -1;
+  border-radius: 10%;
+
+
+}
+
+.card-out-orange {
+  background-color: #FF5C00;
+  left: 30px;
+}
+
+.card-out-yello {
+  background-color: #FFDC00;
+  left: 45px;
+}
+
+
+
+.picbox img {
+  border-radius: 10%;
+}
+
+.picbox p {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  font-size: 35px;
+
+  padding: 10px;
+  font-weight: 600;
+
 }
 
 @media (min-width: 992px) {}
