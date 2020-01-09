@@ -19,6 +19,7 @@
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 			crossorigin="anonymous"
 		></script>
+
 		<link rel="stylesheet" href="style.css" />
 
 		<title>Day1</title>
@@ -62,26 +63,24 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12">
 					<div class="picbox">
-						<div class="box card-out card-out-yello">
+						<div class="box test card-out card-out-yello">
 							<p>BlackCard</p>
 						</div>
-						<div class="box card-out card-out-orange">
+						<div class="box test card-out card-out-orange">
 							<p>BlackCard</p>
 						</div>
-
-						<div class="box box-one">
+						<div class="box test box-one">
 							<img
 								class="img-fluid"
 								src="http://placeimg.com/200/200/any/sepia"
 							/>
 							<p>Card 3</p>
 						</div>
-						<div class="box box-two">
+						<div class="box test  box-two">
 							<img class="img-fluid" src="http://placeimg.com/200/200/people" />
 							<p>Card 2</p>
 						</div>
-
-						<div class="box box-three">
+						<div class="box test box-three">
 							<img class="img-fluid" src="http://placeimg.com/200/200/any" />
 							<p>Card 1</p>
 						</div>
@@ -116,43 +115,37 @@
 				</div>
 			</div>
 		</section>
-
-		<script>
-			let count = 0;
-			let topZ = 2;
-			$(".card-out").click(function() {
-				let constCards = [".box-two", ".box-one", ".box-three"];
-				var thisZ = parseInt($(this).css("z-index"), 10);
-				console.log("thisZ", thisZ); //2
-
-				if (thisZ > topZ && count < constCards.length) {
-					count += 1;
-					topZ += 5;
-					$(` ${constCards[count]} `).css("z-index", thisZ);
-				} else if (thisZ < topZ && count < constCards.length) {
-					$(` ${constCards[count]} `).css("z-index", topZ);
-					topZ += 5;
-					count += 1;
-				} else {
-					count = 0;
-				}
-			});
-		</script>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
 	</body>
+	<script>
+		let count = 0;
+		let topZ = 2;
+		$(".card-out , .test").click(function() {
+			console.log("here");
+			let constCards = [".box-two", ".box-one", ".box-three"];
+			var thisZ = parseInt($(this).css("z-index"), 10);
+			console.log("thisZ", thisZ); //2
+
+			if (thisZ > topZ && count < constCards.length) {
+				count += 1;
+				topZ += 5;
+				$(` ${constCards[count]} `).css("z-index", thisZ);
+			} else if (thisZ < topZ && count < constCards.length) {
+				$(` ${constCards[count]} `).css("z-index", topZ);
+				topZ += 5;
+				count += 1;
+			} else {
+				count = 0;
+			}
+		});
+	</script>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"
+	></script>
 </html>
