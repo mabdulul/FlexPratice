@@ -252,7 +252,6 @@ body {
 
   height: 400px;
   width: 150px;
-  /* right: 2px; */
   top: 20px;
   cursor: pointer;
   z-index: -1;
@@ -265,12 +264,14 @@ body {
 
 .card-out-orange {
   background-color: #FF5C00;
-  right: 0px;
+
+
 }
 
 .card-out-yello {
   background-color: #FFDC00;
-  right: 0px;
+
+
 }
 
 .box-num {
