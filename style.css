@@ -273,6 +273,19 @@ body {
   background-color: #FFDC00;
   right: 10%;
 
+}
+
+@media (min-width: 300px) {
+
+  .card-out-yello {
+    right: 5%;
+  }
+
+  .card-out-orange {
+    background-color: #FF5C00;
+    right: 8%;
+
+  }
 
 }
 
@@ -306,5 +319,3 @@ body {
   font-weight: 600;
 
 }
-
-@media (min-width: 992px) {}
