@@ -208,7 +208,7 @@ body {
 /** PicBox **/
 .picbox {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
 }
 
