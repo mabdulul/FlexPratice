@@ -208,8 +208,8 @@ body {
 /** PicBox **/
 .picbox {
   display: flex;
-  left: 35%;
-  right: 35%;
+  left: 15%;
+
   position: relative;
 }
 
