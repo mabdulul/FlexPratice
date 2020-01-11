@@ -221,6 +221,7 @@ body {
   .picbox div {
     padding: 20px;
     position: relative;
+    justify-content: center;
 
   }
 
