@@ -208,8 +208,7 @@ body {
 /** PicBox **/
 .picbox {
   display: flex;
-  left: 15%;
-
+  justify-content: center;
   position: relative;
 }
 
@@ -218,17 +217,11 @@ body {
   position: absolute;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .picbox div {
     padding: 20px;
     position: relative;
 
-  }
-
-  .picbox {
-    justify-content: center;
-    left: auto;
-    right: auto;
   }
 
   .card-out {
@@ -271,14 +264,14 @@ body {
 
 .card-out-orange {
   background-color: #FF5C00;
-  right: 39%;
+  right: 15%;
 
 
 }
 
 .card-out-yello {
   background-color: #FFDC00;
-  right: 35%;
+  right: 10%;
 
 
 }
