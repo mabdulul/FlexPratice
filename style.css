@@ -208,7 +208,8 @@ body {
 /** PicBox **/
 .picbox {
   display: flex;
-  justify-content: space-evenly;
+  left: 35%;
+  right: 35%;
   position: relative;
 }
 
@@ -222,6 +223,12 @@ body {
     padding: 20px;
     position: relative;
 
+  }
+
+  .picbox {
+    justify-content: center;
+    left: auto;
+    right: auto;
   }
 
   .card-out {
