@@ -217,7 +217,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .picbox div {
     padding: 20px;
     position: relative;
