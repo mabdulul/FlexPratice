@@ -59,63 +59,8 @@
 				</div>
 			</div>
 		</div>
-		<section class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="picbox">
-						<div class="box test card-out card-out-yello"></div>
-						<div class="box test card-out card-out-orange"></div>
-						<div class="box test box-one">
-							<img
-								class="img-fluid"
-								src="http://placeimg.com/200/200/any/sepia"
-							/>
-							<h3>Noah Slee is neo-soul singer songwriter with Tongan roots</h3>
-						</div>
-						<div class="box test  box-two">
-							<img class="img-fluid" src="http://placeimg.com/200/200/people" />
-							<h3>
-								<span class="box-num">43</span><br />
-								<span class="box-text"
-									>online course for people with strong motivation</span
-								>
-							</h3>
-						</div>
-						<div class="box test box-three">
-							<img class="img-fluid" src="http://placeimg.com/200/200/any" />
-							<h3 class="box-small-text">
-								A commerical illustraion can be minimalist and created using a
-								single liner or voluminous and bright created in 3d-graphics
-								program.
-							</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 	</body>
-	<script>
-		let count = 0;
-		let topZ = 2;
-		$(".card-out , .test").click(function() {
-			console.log("here");
-			let constCards = [".box-two", ".box-one", ".box-three"];
-			var thisZ = parseInt($(this).css("z-index"), 10);
-			console.log("thisZ", thisZ); //2
 
-			if (thisZ > topZ && count < constCards.length) {
-				count += 1;
-				topZ += 5;
-				$(` ${constCards[count]} `).css("z-index", thisZ);
-			} else if (thisZ < topZ && count < constCards.length) {
-				$(` ${constCards[count]} `).css("z-index", topZ);
-				topZ += 5;
-				count += 1;
-			} else {
-				count = 0;
-			}
-		});
-	</script>
 	<script
 		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

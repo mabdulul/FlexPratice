@@ -279,6 +279,10 @@ body {
 
 }
 
+.testflex {
+  display: contents;
+}
+
 @media (min-width: 300px) {
 
   .card-out-yello {
